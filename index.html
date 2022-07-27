@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome to Future</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">EARTH-199999</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="./vids/space.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Never Stop</h2>
+            <h3>Exploring The World</h3>
+            <p>Nobody on this earth is perfect. Everybody has their flaws; everybody has their dark secrets and vices.</p>
+            <a href="#">Explore</a>
+        </div>
+
+        <ul class="social">
+            <li><a href="#"><img src="./facebook.png" alt="" /></a></li>
+            <li><a href="#"><img src="./linkedin.png" alt="" /></a></li>
+            <li><a href="#"><img src="./instagram.png" alt="" /></a></li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">The Avengers:<br> (2012)</a></li>
+            <br> 
+            <li><a href="#">Avengers:<br>  Age of Ultron<br> (2015)</a></li>
+            <br> 
+            <li><a href="#">Avengers:<br>  Endgame<br> (2019)</a></li>
+            <br> 
+            <li><a href="#"> Avengers:<br>  Infinity War<br> (2018)</a></li>
+            <br> 
+            <li><a href="#">Avengers:<br>  The Kang Dynasty<br> (2025)</a></li>
+            <br> 
+            <li><a href="#">Avengers:<br>  Secret Wars<br> (2025)</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+    
+</body>
+</html>
